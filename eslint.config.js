@@ -6,9 +6,8 @@ export default tseslint.config(
   js.configs.recommended,
   ...tseslint.configs.recommended,
 
-  // Custom rules & environment flags
   {
-    files: ["**/*.js", "**/*.ts"],
+    files: ["**/*.ts", "**/*.js"],
     languageOptions: {
       globals: {
         ...globals.browser,
@@ -17,6 +16,11 @@ export default tseslint.config(
     },
     rules: {
       "no-redeclare": "error",
+    },
+  },
+  {
+    files: ["**/*.js"],
+    rules: {
       "no-undef": "error",
     },
   },
