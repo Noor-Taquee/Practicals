@@ -3,6 +3,11 @@ name: CI/CD
 on:
   push:
     branches: ["master"]
+    paths:
+      - "src/**"
+      - "package.json"
+      - "package-lock.json"
+      - "tsconfig.json"
   workflow_dispatch:
 
 permissions:
