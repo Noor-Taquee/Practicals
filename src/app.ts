@@ -1,5 +1,7 @@
+import "./app.css";
+
 import { createElement } from "./utils/create-dom.js";
-import { navBar } from "./components/navigation/navigation.js";
+import { navBar } from "./components/navigation/script.js";
 
 //#region app
 export const app = document.getElementById("app") as HTMLDivElement;
