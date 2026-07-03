@@ -1,4 +1,4 @@
-import { navBar } from "./components/navigation/navigation.js";
+import { navBar } from "./components/navigation/script.js";
 import { panelContainer } from "./app.js";
 
 import { homePanel } from "./pages/home-panel/page.js";
