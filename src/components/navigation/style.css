@@ -1,0 +1,115 @@
+#navigation-bar {
+  --height: 60px;
+  --btn-height: var(--height);
+  --btn-width: 80px;
+
+  --focus-no: 0;
+
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: env(safe-area-inset-bottom);
+  left: 0;
+
+  flex-shrink: 0;
+  height: var(--height);
+  width: fit-content;
+
+  margin: auto auto 20px;
+  overflow: hidden;
+
+  border-radius: calc(var(--height) / 2);
+
+  display: flex;
+  align-items: center;
+
+  background-color: var(--secondary-bg);
+}
+
+[data-orientation="horizontal"] #navigation-bar {
+  --btn-width: 120px;
+  --btn-height: 40px;
+
+  position: static;
+  z-index: auto;
+
+  height: 100%;
+  width: fit-content;
+
+  padding: 20px 10px;
+  border-radius: 0;
+
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: none;
+}
+
+#nav-focus {
+  touch-action: none;
+  pointer-events: none;
+
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: calc(var(--btn-width) * var(--focus-no));
+
+  height: var(--btn-height);
+  width: var(--btn-width);
+
+  border: none;
+  border-radius: calc(var(--height) / 2);
+
+  background-color: var(--accent);
+  opacity: 0.3;
+  box-shadow: 0 0 5px var(--absolute-bg) inset;
+
+  transition: left 300ms ease-out;
+}
+[data-orientation="horizontal"] #nav-focus {
+  top: calc(var(--focus-no) * var(--btn-height));
+  left: 0 !important;
+  margin: 20px auto auto 10px;
+  border-radius: 8px;
+}
+
+.nav-btn {
+  cursor: default;
+  user-select: none;
+  touch-action: manipulation;
+
+  height: var(--btn-height);
+  width: var(--btn-width);
+
+  border: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  background-color: transparent;
+
+  i {
+    font-size: var(--navigation-icon-size);
+  }
+  p {
+    font: 400 14px "Inter";
+  }
+}
+
+[data-orientation="horizontal"] .nav-btn {
+  height: var(--btn-height);
+  padding: 5px 10px;
+  border-radius: 10px;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: flex-start;
+  &:hover {
+    background-color: var(--accent);
+  }
+  p {
+    font: 500 14px "Inter";
+  }
+}

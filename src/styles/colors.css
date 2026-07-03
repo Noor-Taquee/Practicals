@@ -1,0 +1,97 @@
+[data-theme="light"] {
+  --absolute-bg: #ffffff;
+}
+
+[data-theme="dark"] {
+  --absolute-bg: #000000;
+}
+
+[data-theme="light"][data-palette="default"] {
+  --primary-bg: #dddddd;
+  --secondary-bg: #ffffff;
+  --blur-bg: #ffffff90;
+  --primary-text-color: #000000;
+  --border-color: #00000080;
+  --accent: #969696;
+}
+
+[data-theme="dark"][data-palette="default"] {
+  --primary-bg: #000000;
+  --secondary-bg: #1e1e1e;
+  --blur-bg: #1e1e1e90;
+  --primary-text-color: #ffffff;
+  --border-color: #ffffff99;
+  --accent: #969696;
+}
+
+[data-theme="light"][data-palette="lime"] {
+  --primary-bg: #f5ffe6;
+  --secondary-bg: #e6fab4;
+  --blur-bg: #e6fab490;
+  --primary-text-color: #1e2814;
+  --border-color: #78963c;
+  --accent: #96c846;
+}
+
+[data-theme="dark"][data-palette="lime"] {
+  --primary-bg: #12180e;
+  --secondary-bg: #1c2416;
+  --blur-bg: #1c241690;
+  --primary-text-color: rgb(220, 235, 210);
+  --border-color: #96c846;
+  --accent: #aadc5a;
+}
+
+[data-theme="light"][data-palette="pink"] {
+  --primary-bg: #fff5fa;
+  --secondary-bg: #f5e1f0;
+  --blur-bg: #f5e1f090;
+  --primary-text-color: #281423;
+  --border-color: #b478a0;
+  --accent: #c882b4;
+}
+
+[data-theme="dark"][data-palette="pink"] {
+  --primary-bg: #161014;
+  --secondary-bg: #22181e;
+  --blur-bg: #22181e90;
+  --primary-text-color: #ebd7e1;
+  --border-color: #c882b4;
+  --accent: #dc96c8;
+}
+
+[data-theme="light"][data-palette="blue"] {
+  --primary-bg: #f0f8ff;
+  --secondary-bg: #e1f0fa;
+  --blur-bg: #e1f0fa90;
+  --primary-text-color: #141e28;
+  --border-color: #648cb4;
+  --accent: #6eaadc;
+}
+
+[data-theme="dark"][data-palette="blue"] {
+  --primary-bg: #0e1218;
+  --secondary-bg: #181e26;
+  --blur-bg: #181e2690;
+  --primary-text-color: #d7e1eb;
+  --border-color: #82b4e6;
+  --accent: #8cc8fa;
+}
+
+[data-theme="light"][data-palette="purple"] {
+  --primary-bg: #f8f5ff;
+  --secondary-bg: #e8e1fa;
+  --blur-bg: #e8e1fa90;
+  --primary-text-color: #231e2d;
+  --border-color: #826eaa;
+  --accent: #9682c8;
+}
+
+[data-theme="dark"][data-palette="purple"] {
+  --primary-bg: #100e16;
+  --secondary-bg: #1a1824;
+  --blur-bg: #1a182490;
+  --primary-text-color: #e1dceb;
+  --border-color: #a08cd2;
+  --accent: #b4a0e6;
+}
