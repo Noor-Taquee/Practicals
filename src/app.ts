@@ -1,3 +1,5 @@
+import "./app.css";
+
 import { createElement } from "./utils/create-dom.js";
 import { navBar } from "./components/navigation/script.js";
 
