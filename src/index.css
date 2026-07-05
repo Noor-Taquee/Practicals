@@ -71,7 +71,6 @@
   }
 }
 
-/* #region body */
 html,
 body {
   height: 100%;
@@ -85,22 +84,11 @@ textarea {
   user-select: text;
 }
 
-/* #region MARK: app
-*/
-
 p,
 i,
 input {
   color: var(--primary-text-color);
 }
-
-/* #region inner-app */
-
-/* #region inner-app-tab-container */
-
-/* #endregion inner-app-tab-container */
-
-/* #region global styles */
 
 .toggle-effect {
   position: relative;
@@ -253,5 +241,3 @@ input {
     font-size: var(--icon-size);
   }
 }
-
-/* #endregion global styles */
